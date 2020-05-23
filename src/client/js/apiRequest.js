@@ -1,18 +1,11 @@
-const apiAnalyse = async (url) => {
+const axios = require('axios');
+
+async function apiAnalyse (url) {
     document.querySelector(".ui.dimmer").classList.add("active");
     try {
-        const response = await fetch('/analyse', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                'url': url
-            })
-        });
-        const resJson = await response.json();
-        document.querySelector("#result").innerText = resJson.polarity;
-        console.log(resJson);
+        const response = await axios.post('/analyse', {url});
+        console.log(response);
+        document.querySelector("#result").innerText = response.data.polarity;
     } catch(error){
         console.log("error", error);
         document.querySelector("#result").innerText = "Try again!";
