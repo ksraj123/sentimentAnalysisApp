@@ -1,3 +1,65 @@
-body{
-    background-color: purple;
+$spacing: 20px;
+$round: 10%;
+$font-size: 30px;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(304deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(304deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(304deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+}
+
+header {
+    margin-bottom: 3 * $spacing;
+    font-size: 3em;
+    color: white;
+}
+
+#result-display {
+    width: 500px;
+    height: 400px;
+    background-color: lightblue;
+    padding: 0.1 * $spacing;
+    box-sizing: border-box;
+    border-radius: $round;
+
+    h3 {
+        text-align: center;
+        margin: 0.2 * $spacing;
+    }
+
+    #result {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $spacing;
+    border-radius: $round;
+
+    button {
+        border: 0;
+        font-size: 50px;
+        border-radius: $round;
+        margin: 2 * $spacing;
+    }
+
+    button:hover {
+        background-color: lightblue;
+        color: white;
+    }
 }

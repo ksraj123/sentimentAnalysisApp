@@ -8,12 +8,7 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
-            </div>
+            <span>Sentiment Analysis App</span>
         </header>
 
         <main>
@@ -25,22 +20,16 @@
                       
             <section>
                 <form class="ui form">
-                        <div class="field">
                     <input id="url" type="text" name="url" value="" placeholder="Url to analyse">
-                    </div>
                     <button class="ui button" type="submit">Analyse</button>
                 </form>
             <section>
 
-            <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+            <section id="result-display">
+                <h3><strong>Analysis Results:</strong></h3>
+                <div id="result"></div>
             </section>
         </main>
-
-        <footer>
-            <p>This is a footer</p>
-        </footer>
 
         <script>
             // Check that service workers are supported
