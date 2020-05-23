@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
-app.post('/test', function (req, res) {
+app.post('/analyse', function (req, res) {
     const url = req.body.url;
     apiResponse(url, (response, writer = res)=>{
         writer.send(response);

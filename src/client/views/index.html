@@ -3,11 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
     </head>
 
     <body>
@@ -22,10 +17,18 @@
         </header>
 
         <main>
+            <div class="ui segment">
+                <div class="ui active dimmer">
+                    <div class="ui text loader">Analysing</div>
+                </div>
+            </div>
+                      
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="ui form">
+                        <div class="field">
+                    <input id="url" type="text" name="url" value="" placeholder="Url to analyse">
+                    </div>
+                    <button class="ui button" type="submit">Analyse</button>
                 </form>
             <section>
 

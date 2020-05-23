@@ -14,7 +14,6 @@ const getApiResponse = (url, fn) => {
         'url': url
       }, function(error, response) {
         if (error === null) {
-        //   console.log(response);
           fn(response);
         }
         return error;
