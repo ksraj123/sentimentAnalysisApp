@@ -4,7 +4,7 @@ const express = require('express');
 const apiResponse = require('./aylienAPI.js');
 
 const app = express();
-const port = 8080;
+const port = 8083;
 
 app.use(cors());
 app.use(express.json());

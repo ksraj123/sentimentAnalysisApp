@@ -1,12 +1,11 @@
 import { checkForUrl } from './urlChecker'
-import { apiAnalyse } from './apiRequest'
 
-function handleSubmit(event) {
+function handleSubmit(event, fn) {
     event.preventDefault()
     const url = document.getElementById('url').value
 
     if (checkForUrl(url)) { 
-        apiAnalyse(url);
+        fn(url);
     } else {
         document.querySelector("#result").innerText = "Invalid URL!!";
     }
