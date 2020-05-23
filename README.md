@@ -13,8 +13,8 @@ First clone this repo using the following command
 
     git clone https://github.com/ksraj123/sentimentAnalysisApp.git
 
-Sign up [here](https://developer.aylien.com/signup) for the API key and ID
-create a `.env` file in the project root of the following format
+Sign up [here](https://developer.aylien.com/signup) for the API id and key
+then create a `.env` file in the project root of the following format
 
     API_ID=<API ID HERE>
     API_KEY=<API KEY HERE>
